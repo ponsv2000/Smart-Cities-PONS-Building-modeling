@@ -1,4 +1,4 @@
-![logo_ecole](./pictures/report/image25.png)
+![accueil](./report/pictures/Pict1_ense3.PNG)
 ----
 **2A SEM/SGB**
 *30/05/2022*
@@ -13,7 +13,7 @@
 
 ## **Dynamic Models for Building Energy Management**
 
-![accueil](./pictures/report/image22.jpg)
+![accueil](./report/pictures/Pict2_garde.PNG)
 
 # **Introduction**
 
@@ -39,18 +39,9 @@ The studio has two windows with views to the outside, one in the bedroom and one
 
 
 
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.jpg). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+![accueil](./report/pictures/Pict3_roomsimple.PNG)
 
-
-![alt_text](images/image3.jpg "image_tooltip")
-
-
-
-
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.jpg). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image4.jpg "image_tooltip")
+![accueil](./report/pictures/Pict4_room_comp.PNG)
 
 
 _Figure 1. The studied building and its dimensions with an assumed ceiling height of 2,4 meters. _
@@ -68,11 +59,7 @@ A heat flow could be described as a flow of energy due to variances in temperatu
 
 
 
-<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image5.png "image_tooltip")
-
+![accueil](./report/pictures/Pict5_wall.PNG)
 
 _Figure 3. Heat exchange through a wall in the form of conduction, convection and radiation. Advection is not presented in the figure but can be described as a heat flow due to a mass transfer mechanism. _
 
@@ -80,10 +67,7 @@ In this studied case, the walls are considered to consist of several layers of m
 
 
 
-<p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image6.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image6.png "image_tooltip")
+![accueil](./report/pictures/Pict6_wall2.PNG)
 
 
 _Figure 4. The exterior wall is considered to consist of concrete and fiberglass insulation. _
@@ -243,10 +227,7 @@ Below, in figure 5, the thermal modeling of the room is presented. The model is 
 
  
 
-<p id="gdcalert7" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image7.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert8">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image7.png "image_tooltip")
+![accueil](./report/pictures/Pict7_thermalmodel.PNG)
 
 
 _Figure 5. The thermal model of the studied system based on the presented model in figure 1. The nodes and resistances were numbered appropriately and utilized to determine the matrices for the model to be adopted. _
@@ -288,12 +269,7 @@ where:
 The construction of the thermal model requires the different principles of thermodynamics:
 
 
-
-<p id="gdcalert8" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image8.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert9">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image8.png "image_tooltip")
-
+![accueil](./report/pictures/Pict8_thermodynamics.PNG)
 
 We have the following three equations:
 
