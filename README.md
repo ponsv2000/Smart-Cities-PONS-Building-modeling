@@ -373,18 +373,11 @@ f[14,1] = 1 (corresponds to the** indoor** radiative flow rate)
 
 Regarding the radiation : 
 
-<p id="gdcalert20" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: equation: use MathJax/LaTeX if your publishing platform supports it. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert21">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
- = hr (Ts - Te)
+![accueil](./report/pictures/phi_rad.PNG)
 
 We will use : 1000 W/m2 K and 500 W/m2 K values for our simulation. 
 
-
-
-<p id="gdcalert21" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image16.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert22">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image16.png "image_tooltip")
+![accueil](./report/pictures/Pict16_f.PNG)
 
 
 
@@ -396,24 +389,17 @@ We will use : 1000 W/m2 K and 500 W/m2 K values for our simulation.
 
 ## **1.Steady-state**
 
-We will use :  h<sub>out</sub> = air convection coefficient = 25 & h<sub>in</sub> = 8 
+We will use :  hout = air convection coefficient = 25 & hin = 8 
 
 For all the simulations we perform, it is necessary to go through a state representation of the system. The transition from thermal matrix modelling to the state representation corresponds to the transition between this equation :
 
 
-
-<p id="gdcalert22" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image17.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert23">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image17.png "image_tooltip")
+![accueil](./report/pictures/Pict17_equa.PNG)
 
 
 and the state space model : 
 
-<p id="gdcalert23" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image18.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert24">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image18.png "image_tooltip")
+![accueil](./report/pictures/Pict18_systeme.PNG)
 
 
 where:
@@ -434,11 +420,7 @@ where:
 
 The input vector u is : 
 
-<p id="gdcalert24" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image19.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert25">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image19.png "image_tooltip")
-
+![accueil](./report/pictures/Pict19_u.PNG)
 
 This transformation is achieved with the fTC2SS function by coding as follows : [As,Bs,Cs,Ds] = fTC2SS(A,G,b,C,f,y)
 
@@ -448,10 +430,7 @@ We obtain the following values :
 
 
 
-<p id="gdcalert25" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image20.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert26">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image20.png "image_tooltip")
+![accueil](./report/pictures/Pict20_steady_state.PNG)
 
 
 
@@ -476,22 +455,11 @@ The state-space representation is obtained from the differential-algebraic equat
 
 [As, Bs, Cs, Ds] = dm4bem.tc2ss(A, G, b, C, f, y)
 
-The maximum time step for numerical stability of Euler explicit integration in time is given by the minimum eigenvalue 
+The maximum time step for numerical stability of Euler explicit integration in time is given by the minimum eigenvalue lambda of the state matrix As : 
 
-<p id="gdcalert26" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: equation: use MathJax/LaTeX if your publishing platform supports it. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert27">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
- of the state matrix 
-
-<p id="gdcalert27" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: equation: use MathJax/LaTeX if your publishing platform supports it. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert28">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+![accueil](./report/pictures/Pict21bis_condition.PNG)
 
  : 
-
-
-
-<p id="gdcalert28" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image21.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert29">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image21.png "image_tooltip")
 
 
 The maximum time step for numerical stability of Euler explicit integration in time depends on the value of the P-controller gain and if the capacities of the indoor air and window glass are taken into account.
@@ -511,31 +479,20 @@ temp_imp **=** np**.**zeros([n_tC, t**.**shape[0]])
 By integrating the state space model : 
 
 
+![accueil](./report/pictures/Pict21_state_space.PNG)
 
-<p id="gdcalert29" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image22.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert30">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image22.png "image_tooltip")
 
 
 by using Euler forward (or explicit) : 
 
+![accueil](./report/pictures/Pict22_Euler1.PNG)
 
-
-<p id="gdcalert30" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image23.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert31">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image23.png "image_tooltip")
 
 
 and Euler backward (or implicit) integration : 
 
 
-
-<p id="gdcalert31" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image24.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert32">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image24.png "image_tooltip")
+![accueil](./report/pictures/Pict23_Euler2.PNG)
 
 
 we obtain the outputs.
@@ -543,33 +500,23 @@ we obtain the outputs.
 **The obtained curves are presented at the following page:**
 
 
-
-<p id="gdcalert32" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image25.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert33">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image25.png "image_tooltip")
-
-
-<p id="gdcalert33" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image26.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert34">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image26.png "image_tooltip")
-
-
-
-
-<p id="gdcalert34" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image27.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert35">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image27.png "image_tooltip")
-
+![accueil](./report/pictures/Pict24_curve1.PNG)
+![accueil](./report/picturesPict25_curve2.PNG)
 
 
 ## **4.Simulation with weather data**
 
 We didn’t succeed at simulating this part. 
 
-But we could have seen the impact of radiation on the indoor temperature. 
+There is a problem when we use y_exp et y_imp. 
+These fonctions diverge a lot, it is why it is not working. 
+We did not suceed to resolve this problem. 
+
+We were able to plot only the outdoor temperatures. 
+
+![accueil](./report/Pict26_Simu_Weather.PNG)
+
+We could have seen the impact of radiation on the indoor temperature. 
 
 
 # **Conclusion**
