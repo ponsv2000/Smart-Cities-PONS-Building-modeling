@@ -518,7 +518,7 @@ We did not suceed to resolve this problem.
 We were able to plot only the outdoor temperatures. 
 
 
-![accueil](./report/pictures/Pict26_Simu_Weather.PNG)
+![accueil](./report/pictures/a_month_weather.PNG)
 
 
 We could have seen the impact of radiation on the indoor temperature. 
