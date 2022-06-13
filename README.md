@@ -10,6 +10,7 @@
 * ROBERT Clément
 ----
 
+You can access teh binder through this link : 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ponsv2000/Smart-Cities-PONS-Building-modeling/blob/main/README.md/HEAD)
 
 # **UE SMART CITIES**
