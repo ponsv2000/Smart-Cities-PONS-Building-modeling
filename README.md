@@ -501,7 +501,9 @@ we obtain the outputs.
 
 
 ![accueil](./report/pictures/Pict24_curve1.PNG)
-![accueil](./report/picturesPict25_curve2.PNG)
+
+
+![accueil](./report/pictures/Pict25_curve2.PNG)
 
 
 ## **4.Simulation with weather data**
@@ -514,7 +516,9 @@ We did not suceed to resolve this problem.
 
 We were able to plot only the outdoor temperatures. 
 
-![accueil](./report/Pict26_Simu_Weather.PNG)
+
+![accueil](./report/pictures/Pict26_Simu_Weather.PNG)
+
 
 We could have seen the impact of radiation on the indoor temperature. 
 
