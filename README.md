@@ -9,6 +9,9 @@
 * PONS Victoria 
 * ROBERT Clément
 ----
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ponsv2000/Smart-Cities-PONS-Building-modeling/blob/main/README.md/HEAD)
+
 # **UE SMART CITIES**
 
 ## **Dynamic Models for Building Energy Management**
